@@ -63,7 +63,7 @@ class PrototypesController < ApplicationController
   end
 
   def authenticate_user
-    if @current_user == nil
+    if current_user == nil
       dedirect_to("/login")
     end
   end
